@@ -1,0 +1,16 @@
+spring:
+  application.name: sdj-sandbox
+  sql.init.mode: always
+
+spring.datasource:
+  driverClassName: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/sdj-example
+  username: test
+  password: 123
+  hikari:
+    schema: sdj-example
+
+logging.level:
+  sql: trace
+
+app.schema.name: my_schema
